@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>C & J</title>
+</head>
+<body class="font-serif bg-gray-100">
+    <div id="navbar" class="flex w-full bg-gray-500 h-[14vh] items-center justify-around">
+        <div id="webName" class="h-[12.1vh] w-[15.1vw] bg-cover hover:bg-cyan-400 rounded-lg">
+            <img src="./images/C & D _ Logo.png" alt="logo" class="mx-auto h-[12vh] w-[15vw] border border-transparent rounded-lg">
+        </div>
+        <div id="serch-space" class="h-[12vh] w-[42vw]">
+            <div class="mx-auto flex  items-center h-[12vh] w-[42vw]">
+                <input type="text" class="p-2.5 w-full border border-transparent rounded-s-lg placeholder:text-gray-500 focus:outline-yellow-400 hover:border-yellow-400 hover:border-2" placeholder="Serch Your Favourites">
+                <button class="flex justify-center bg-yellow-400 items-center  h-[6.6vh] w-[3vw] border border-transparent rounded-e-lg">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <button id="location" class="flex flex-col justify-center items-center h-[6.6vh] bg-gray-100 w-[14vw] border border-transparent rounded-lg hover:border-yellow-400 hover:border-2 ">
+            <p class="text-sm font-bold text-cyan-400">Delivering To Surat 335009</p>
+            <div class="flex items-center text-sm">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="text-gray-500 pl-0.5">Update Your Location</p>
+            </div>
+        </button>
+        <div id="lang-slider" class="flex h-[12vh] w-[10vw] justify-center items-center">
+            <select name="language" id="" class="text-lg h-[6.6vh] w-[10vw] border border-transparent rounded-lg text-gray-500   focus:outline-yellow-400 hover:border-yellow-400 hover:border-2">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="gujarati">Gujarati</option>  
+            </select>
+        </div>
+        <button id="cart" class="flex items-center justify-center h-[6.6vh] bg-gray-100 w-[8vw] border border-transparent rounded-lg hover:border-yellow-400 hover:border-2 ">
+            <p class="text-3xl font-bold text-cyan-400">Cart</p>
+            <i class="fa-solid fa-cart-shopping text-3xl"></i>
+        </button>
+    </div>
+    <div id="" class="h-[400vh] bg-gradient-to-b from-gray-500 to-gray-300">
+    <div id="clothes_vareity" class="mx-auto flex justify-evenly h-[30vh] w-[99vw]  items-center rounded-lg">
+        <div id="T-Shirts" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kz4gh3k0/kids-t-shirt/8/m/v/13-14-years-kt-196-limit-fashion-store-original-imagb7gqzfnvrhdy.jpeg?q=90&crop=false" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">T-Shirts</p>
+        </div>
+        <div id="Dresses" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://cf.shopee.com.my/file/db09b041f8a9d05fc9fd258a7d1c506c" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Dresses</p>
+        </div>
+        <div id="Shirts" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20231204/znun/656d01b6ddf7791519ae1e9f/-473Wx593H-466848604-green-MODEL.jpg" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Shirts</p>
+        </div>
+        <div id="Lehanga Cholis" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://assets0.mirraw.com/images/11899053/image_long_webp.webp?1706784818" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Lehenga Cholis</p>
+        </div>
+        <div id="Kurtas" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/d/i/digital-printed-art-silk-kurta-in-sky-blue-v1-utz442.jpg" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Kurtas</p>
+        </div>
+        <div id="Rompers" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmacSCPyC2kmEjsvxO-2rZj38wnvWuFfmdabYhdzwoAY2H0z9sOCsrw0X87EkMwSKY9IE&usqp=CAU" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Rompers</p>
+        </div>
+        <div id="Sportswear" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://ae01.alicdn.com/kf/Hb9618f24d17b464c8331354780d40542m.jpg_640x640Q90.jpg_.webp" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Sportswear</p>
+        </div>
+    </div>
+    <div id="clothing_carts" class="flex flex-wrap justify-evenly my-5">
+        <div id="t-shirts_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/91GChGWSVdL._SX679_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-300"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Allen Solly T-Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">629</p>
+                </div>
+                <p>(43% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="t-shirts_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/B1EryObaEWS._CLa%7C2140%2C2000%7C71GpAu3ov8L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-900"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600"> Portrait T-Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw]  font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">619</p>
+                </div>
+                <p>(36% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="t-shirts_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/9827516a.webp" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-200"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-orange-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-300"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Winter T-Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">649</p>
+                </div>
+                <p>(53% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="t-shirts_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-100 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/71nSMQLtQrL._AC_UY1100_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Cotton Short Sleeve Top</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">499</p>
+                </div>
+                <p>(40% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="t-shirts_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://www.thebrickman.com/wp-content/uploads/2023/08/BM_Xmas_Shirt_Website-1.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-md mx-auto font-bold text-purple-600">Brickman 'Bricksmas' T-Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">899</p>
+                </div>
+                <p>(37% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="dresses_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://images-cdn.ubuy.co.in/635db7473c40324cf724cb35-kids-princess-dress-cosplay.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-300"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Cinderella Princess Dress</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,995</p>
+                </div>
+                <p>(03% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="dresses_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/51lHtPC3v0L._SX425_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-200"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-400"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Febinia Girls Dress</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,752</p>
+                </div>
+                <p>(30% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="dresses_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/61TCRLAF5SS._AC_SL1500_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-purple-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Prom Ball Gowns</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,499</p>
+                </div>
+                <p>(10% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="dresses_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/61jZdSaX7VL._AC_UY1100_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Aarika Gown</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,051</p>
+                </div>
+                <p>(16% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="dresses_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://images.bestsellerclothing.in/data/only-kids/3-aug-2022/127831001_g0.jpg?width=488&height=650&mode=fill&fill=blur&format=auto" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-800"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Mini Dress</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,699</p>
+                </div>
+                <p>(16% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="shirts_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shirt/p/n/t/2-3-years-absfkspfj46689-allen-solly-original-imaghweqcaqgm56r.jpeg?q=20&crop=false" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-900"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Allen Solly Printed Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">833</p>
+                </div>
+                <p>(50% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="shirts_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://img.fruugo.com/product/0/04/734531040_max.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600"> Floral Print Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,590</p>
+                </div>
+                <p>(08% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="shirts_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i.pinimg.com/736x/61/17/d0/6117d0c976f64bf505c65b784e3cd4bc.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-300"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">cotton shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">309</p>
+                </div>
+                <p>(85% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="shirts_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13163611a.webp" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-300"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Printed Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">529</p>
+                </div>
+                <p>(62% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="shirts_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/71XKgiSm-OL._AC_UY1100_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Full Sleeves, Printed Shirt</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">899</p>
+                </div>
+                <p>(42% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="lehanga_cholis_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/26875424/2024/1/10/5dbe3c15-7da4-4ce3-b60f-9c93affe862e1704887843176BAESDGirlsPinkGold-TonedEmbroideredMirrorWorkReadytoWearLehe1.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Leheriya Lehenga Choli</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,499</p>
+                </div>
+                <p>(13% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="lehanga_cholis_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i.etsystatic.com/31924165/r/il/0d123a/4307790624/il_570xN.4307790624_svug.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-950"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Printed Lehenga Choli</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">15,183</p>
+                </div>
+                <p>(12% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="lehanga_cholis_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-georgette-lehenga-in-light-pink-v2-ukr462.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-rose-300"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-md mx-auto font-bold text-purple-600">Embroidered Georgette Lehenga</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">3,840</p>
+                </div>
+                <p>(20% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="lehanga_cholis_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://images.sareeswholesale.com/Pink-Weaving-Jute-Silk-Kids-Lehenga-Choli-193386.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-orange-200"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-lg mx-auto font-bold text-purple-600">Weaving Silk Lehenga Choli</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">6,080</p>
+                </div>
+                <p>(10% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="lehanga_cholis_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://assets.panashindia.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/9/199kw01-nckskd044.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-orange-200"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-lg mx-auto font-bold text-purple-600">Lehenga Choli With Dupatta</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">5,256</p>
+                </div>
+                <p>(20% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="kurtas_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://www.hatheli.com/cdn/shop/products/842BKUPK_1.jpg?v=1655471149" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Bandhani Cotton Kurta</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,299</p>
+                </div>
+                <p>(34% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="kurtas_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://www.parivarceremony.com/media/catalog/product/cache/62408a38a401bb86dbe3ed2f017b539f/p/r/prc2034.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Jacquard,Silk Kurta</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">4,211</p>
+                </div>
+                <p>(07% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="kurtas_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://img.perniaspopupshop.com/catalog/product/c/o/CORDL092202_1.jpg?impolicy=detailimageprod" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Printed Pathani Kurta </p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,655</p>
+                </div>
+                <p>(10% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="kurtas_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i.pinimg.com/474x/1b/bb/31/1bbb310b6c6c9ca3d92ab7d8f77a8cc3.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-600"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">pathani suit</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,499</p>
+                </div>
+                <p>(22% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="kurtas_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/kids-ethnic-set/w/k/u/7-8-years-fancy-kurta-navy-printed-24-1-deiana-s-original-imaghmvuaqm42gjf.jpeg?q=70" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-950"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Long Sleeve Kurta Pajama</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,899 </p>
+                </div>
+                <p>(23% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="rompers_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/31B-2XRi6yL._SR240,220_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-300"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-600"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-800"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">famuka Hooded Rompers</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,260</p>
+                </div>
+                <p>(14% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="rompers_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i5.walmartimages.com/seo/Odeerbi-Baby-Girls-Boys-Clothes-Baby-Rompers-Newborn-Fleece-Footie-Snowsuit-Winter-Cartoon-Warm-Hooded-Romper-Jumpsuit-Outfits_cf96876a-01f8-4d1f-a28a-ae5925023c21.67ce46116796e086deeeb791ef1c2d2d.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Odeerbi Rompers</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,499</p>
+                </div>
+                <p>(16% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="rompers_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i5.walmartimages.com/seo/Baby-Boys-Girls-Long-Sleeve-Patchwork-Cute-Bear-Ears-Hooded-Romper-Jumpsuit-Outfit-Clothes-Coat-Toddler-Shirt-Boy-Sweatshirt-4T-Rompers-18-24-Months-_eed50e17-f732-46c6-a00f-4703447f6a10.0cbb52a473baa39a0de2f556995834bf.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-800"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-md mx-auto font-bold text-purple-600">Long Sleeve Bear Ears Romper</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,299</p>
+                </div>
+                <p>(29% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="rompers_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://4.imimg.com/data4/MW/CC/MY-13564189/kids-romper-500x500.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-300"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-950"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-200"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Printed Romper</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,399</p>
+                </div>
+                <p>(13% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="rompers_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i.pinimg.com/736x/62/a3/66/62a366869636d124e2b8a49702111791.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-orange-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                    </div>
+                    
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Car Design Body Romper</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,194</p>
+                </div>
+                <p>(12% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="sportwears_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 " >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://i.ebayimg.com/images/g/KnAAAOSwC~tfisZ9/s-l400.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Woven Tracksuit</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,029</p>
+                </div>
+                <p>(25% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="sportwears_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 " >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c2cfa6a7-83a5-44a2-a6e8-01361a303281/swoosh-older-tank-sports-bra-5PSrQr.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-rose-400"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-600"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Nike Swoosh</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,320</p>
+                </div>
+                <p>(23% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="sportwears_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 " >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9E2XLldZeFQH1sr1xOKYFXyoBxc2a5l8Plg&usqp=CAU" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-800"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-700"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-500"></button>
+                    </div>
+                </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Fit & Comfort</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">1,203</p>
+                </div>
+                <p>(26% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="sportwears_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 " >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://thumbs.nosto.com/quick/oneillsuknew/8/867164/fa556f7cc802ee8e6b49bbaa98d81d6fd0f070c40031e39f133a00d6ce1cc07a/A" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-950"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-600"></button>
+                    </div>
+                 </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">O'Neills Sportswear </p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,670</p>
+                </div>
+                <p>(21% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+        <div id="sportwears_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 " >
+            <div class="bg-cover mx-auto">
+                <a href="#"><img src="https://en-sa.sssports.com/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dw452a2eed/sss/SSS2/N/K/F/N/7/SSS2_NKFN7712_410_196969908737_3.jpg?sw=700&sh=700&sm=fit" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                <div id="colours" class="flex  items-center">
+                    <p class="text-lg text-gray-700">Colours:</p>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-900"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                    </div>
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                    </div>
+                 </div>
+            </div>  
+            <p id="name" class="text-xl mx-auto font-bold text-purple-600">Fleece Cargo Joggers</p>
+            <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                    <p class="font-bold text-2xl text-gray-700">2,199</p>
+                </div>
+                <p>(22% off)</p>
+            </div>
+            <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+        </div>
+    </div>
+        <div id="footer">
+            <div class="h-[15vh] w-full bg-gray-500 my-3">
+                <div class="mx-auto text-yellow-400 text-3xl w-[10vw] flex justify-center items-center">
+                    <p>About Us</p>
+                </div>
+                    <div class=" mx-auto flex w-[35vw] h-[5vh] text-yellow-400 items-center justify-evenly">
+                        <p>Conditions of Use & Sale</p>
+                        <p>Privecy Notice</p>
+                        <p>Interest-Based Ads</p>
+                    </div>
+                <div class="mx-auto flex w-[20vw] h-[5vh] text-yellow-400 items-center">
+                    <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-yellow-400 justify-center items-center">
+                        <button class="h-[2vh] w-[1vw] rounded-[50%] text-yellow-400 flex justify-center items-center">C</button>
+                    </div>
+                    <p>2001-2024, C & J.in, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

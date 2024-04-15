@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>C & J</title>
+</head>
+<body class="font-serif bg-gray-100">
+    <div id="navbar" class="flex w-full bg-gray-500 h-[14vh] items-center justify-around">
+        <div id="webName" class="h-[12.1vh] w-[15.1vw] bg-cover hover:bg-cyan-400 rounded-lg">
+            <img src="./images/C & D _ Logo.png" alt="logo" class="mx-auto h-[12vh] w-[15vw] border border-transparent rounded-lg">
+        </div>
+        <div id="serch-space" class="h-[12vh] w-[42vw]">
+            <div class="mx-auto flex  items-center h-[12vh] w-[42vw]">
+                <input type="text" class="p-2.5 w-full border border-transparent rounded-s-lg placeholder:text-gray-500 focus:outline-yellow-400 hover:border-yellow-400 hover:border-2" placeholder="Serch Your Favourites">
+                <button class="flex justify-center bg-yellow-400 items-center  h-[6.6vh] w-[3vw] border border-transparent rounded-e-lg">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <button id="location" class="flex flex-col justify-center items-center h-[6.6vh] bg-gray-100 w-[14vw] border border-transparent rounded-lg hover:border-yellow-400 hover:border-2 ">
+            <p class="text-sm font-bold text-cyan-400">Delivering To Surat 335009</p>
+            <div class="flex items-center text-sm">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="text-gray-500 pl-0.5">Update Your Location</p>
+            </div>
+        </button>
+        <div id="lang-slider" class="flex h-[12vh] w-[10vw] justify-center items-center">
+            <select name="language" id="" class="text-lg h-[6.6vh] w-[10vw] border border-transparent rounded-lg text-gray-500   focus:outline-yellow-400 hover:border-yellow-400 hover:border-2">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="gujarati">Gujarati</option>  
+            </select>
+        </div>
+        <button id="cart" class="flex items-center justify-center h-[6.6vh] bg-gray-100 w-[8vw] border border-transparent rounded-lg hover:border-yellow-400 hover:border-2 ">
+            <p class="text-3xl font-bold text-cyan-400">Cart</p>
+            <i class="fa-solid fa-cart-shopping text-3xl"></i>
+        </button>
+    </div>
+    <div id="" class="h-[735vh] bg-gradient-to-b from-gray-500 to-gray-400">
+    <div id="clothes_vareity" class="mx-auto flex justify-evenly h-[30vh] w-[99vw]  items-center rounded-lg">
+        <div id="Earrings" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://m.media-amazon.com/images/I/81kAKkljAwL._SL1500_.jpg" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Earrings</p>
+        </div>
+        <div id="Jewellery Set" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://m.media-amazon.com/images/I/71yBgRH6RbL.jpg" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Jewellery Set</p>
+        </div>
+        <div id="Bangles" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/6/6/6699c4aBBA3_NYR1_1.jpg?rnd=20200526195200&tr=w-512" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Bangles</p>
+        </div>
+        <div id="Rings" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://i.pinimg.com/474x/29/36/84/293684b5d22d89244651a9246cb3be39.jpg" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Rings</p>
+        </div>
+        <div id="Necklace" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://kinclimg2.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPS0004P07_YAA18DIG6BLTOXXXX_ABCD00-PICS-00004-1024-34391.png" alt="" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Necklace</p>
+        </div>
+        <div id="Chains" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230402/7wUk/642966db711cf97ba702be8a/-473Wx593H-466003069-silver-MODEL.jpg" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Chains</p>
+        </div>
+        <div id="Bracelets" class="flex flex-col h-[29vh] w-[12.5vw] rounded-lg items-center">
+            <img src="https://cdn.augrav.com/online/jewels/2021/01/22112330/Sparkling-Star-Gold-Couple-Cuff-Bracelets.jpg.jpg" class="h-[25vh] w-[12vw] rounded-lg hover:h-[28vh] hover:w-[15.5vw]">
+            <p class="text-yellow-400 text-2xl">Bracelets</p>
+        </div>
+    </div>
+    <div id="Jewels_men" class="my-5">
+        <div class="w-[16vw] mx-auto flex justify-center items-center text-2xl font-bold text-yellow-400 border-b-4 border-purple-700 rounded-lg hover:border-t-2 hover:border-x-2 hover:border-purple-700"><p>Jewels For Men</p></div>
+        <div id="Jewels_carts" class="flex flex-wrap justify-evenly my-5">
+            <div id="rings_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/agustinv11/diamond/emerald_AAA/alloycolour/white.jpg?width=516&height=516" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-800"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-800"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">GLAMIRA Ring Agustin</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,41,202</p>
+                    </div>
+                    <p>(55% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg5.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPO0845R21_RAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-64993.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Rose Gold with Diamonds </p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw]  font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">63,970</p>
+                    </div>
+                    <p>(36% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg4.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPO0845R13_YAA18DIG6SOG60040_ABCD00-PICS-00001-1024-64999.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Diamond PreSet Solitaire</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,24,851</p>
+                    </div>
+                    <p>(21% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-100 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.diamondmansion.com/media/catalog/design/sol-6064/colorless/white/princess/1377708419-sol-6064-ps-aw.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Princess Cut Diamond </p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">5,12,000</p>
+                    </div>
+                    <p>(10% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.candere.com/media/jewellery/images/CPR0068__1.jpeg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Platinum & Rose Gold</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">29,900</p>
+                    </div>
+                    <p>(20% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://static-01.daraz.com.bd/p/c40f55b572f50fb681108aba06c6577e.jpg_750x400.jpg_.webp" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-800"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Stainless Steel Chains</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">2,995</p>
+                    </div>
+                    <p>(03% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/necklace-chain/e/p/n/1-cn018stl-5-chain-minprice-original-imagq2r4fhdpsedh.jpeg?q=20&crop=false" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Anti Tarnish Silver Round</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">328</p>
+                    </div>
+                    <p>(72% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://silvadore.co.uk/cdn/shop/products/silvadore-ssmc-chains-18-velvet-pouch-9mm-flat-curb-mens-necklace-silver-chain-stainless-steel-jewellery-07-4913802510409_5000x.jpg?v=1575945267" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Miami Cuban Link Chain</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">5,400</p>
+                    </div>
+                    <p>(24% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.zales.com/productimages/processed/V-20342009_1_800.jpg?pristine=true" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Diamond-Cut Cuban Link </p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">67,920</p>
+                    </div>
+                    <p>(16% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/kvvad8w0/necklace-chain/p/t/l/1-only-02-chain-fashion-only-original-imag8zdcbytyncyk.jpeg?q=20&crop=false" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Rice Design chain</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,699</p>
+                    </div>
+                    <p>(16% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://etchcraftemporium.in/cdn/shop/products/largebr02_720x.jpg?v=1704998719" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Personalised Classic</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,199</p>
+                    </div>
+                    <p>(18% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://shreemjewels-website.s3.amazonaws.com/images/Shreem-Jewels/gents_bracelets__1577p" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Diamond Studded Rudraksh</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,37,811</p>
+                    </div>
+                    <p>(08% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwe45a795d/images/hi-res/51F1D1BQLAACZ_1.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Religious Dual Tone Gold</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,45,317</p>
+                    </div>
+                    <p>(14% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw45426302/images/hi-res/510228VCA1A00_1.jpg?sw=640&sh=640" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Striking Gold Kada</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">82,140</p>
+                    </div>
+                    <p>(23% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.whpjewellers.com/images/products/GBRD23027553_1.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Designed Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">3,27,786</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="Jewels_women">
+        <div class="w-[18vw] mx-auto flex justify-center items-center text-2xl font-bold text-yellow-400 border-b-4 border-purple-700 rounded-lg hover:border-t-2 hover:border-x-2 hover:border-purple-700"><p>Jewels For Women</p></div>
+        <div id="Jewels_carts" class="flex flex-wrap justify-evenly my-5">
+            <div id="earrings_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg5.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIVT0023D05_YAA18DIG6XXXXXXXX_ABCD00-PICS-00004-1024-11664.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">The Almas Jhumka</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,52,758</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg3.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BISM0047S03_YAA18XXXXXXXXXXXX_ABCD00-PICS-00004-1024-14138.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Fiery Passion Stud Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw]  font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,799</p>
+                    </div>
+                    <p>(44% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/kfsl18w0/earring/f/b/f/02owlmultii300-only-you-original-imafw5pshzkzqtwn.jpeg?q=90&crop=false" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-300"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Owl Shape Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,600</p>
+                    </div>
+                    <p>(27% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-100 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg4.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BERR0300D12_YAA18DIG4PITRSYG1_ABCD00-PICS-00004-1024-27487.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Hummingbird Drop Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">4,29,595</p>
+                    </div>
+                    <p>(17% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg9.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BVVJ0001S26_YAA18DIG6XXXXXXXX_ABCD00-PICS-00004-1024-10167.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Teasing Flora Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">21,017</p>
+                    </div>
+                    <p>(23% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="jwellery_set_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/p/f/pf36brc02r.jpg?rnd=20200526195200&tr=w-512" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-md mx-auto font-bold text-purple-600">Traditional Kundan Dulhan Set </p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">4,269</p>
+                    </div>
+                    <p>(39% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="jwellery_set_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://assets0.mirraw.com/images/11626265/image_zoom.jpeg?1687599089" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-md mx-auto font-bold text-purple-600">Antique Neaklace With Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">13,600</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="jwellery_set_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://assets.ajio.com/medias/sys_master/root/20230322/u4eL/641ad70a907deb497aa25342/-473Wx593H-465805878-multi-MODEL.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Stone-Studded Set</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">21,999</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="jwellery_set_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://images-eu.ssl-images-amazon.com/images/I/71hQAGgq13L._AC_SR462,693_.jpghttps://images-eu.ssl-images-amazon.com/images/I/71hQAGgq13L._AC_SR462,693_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-md mx-auto font-bold text-purple-600">Traditional South Long Haram</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,399</p>
+                    </div>
+                    <p>(87% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="jwellery_set_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://africanboutique.in/wp-content/uploads/2022/08/WhatsApp-Image-2022-08-01-at-3.04.53-PM.jpeg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-800"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Dubai Bridal Wedding Set</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">2,480</p>
+                    </div>
+                    <p>(24% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bangles_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://imagescdn.jaypore.com/img/app/product/3/39585991-11480918.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Screw Brass Bangles</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,974</p>
+                    </div>
+                    <p>(40% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bangles_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://assets.ajio.com/medias/sys_master/root/20230223/tyBc/63f779eef997dde6f4bf958e/-473Wx593H-6006301810-multi-MODEL.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Bangles</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">2,14,084</p>
+                    </div>
+                    <p>(20% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bangles_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61uz+owmqmL._AC_UY1100_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Chuda set</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">249</p>
+                    </div>
+                    <p>(81% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bangles_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://imagescdn.jaypore.com/img/app/product/3/39592577-11597697.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Silver Bangles With Stones</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">4,491</p>
+                    </div>
+                    <p>(36% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bangles_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://assets0.mirraw.com/images/7791203/image_zoom.jpeg?1580378464" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Silver Bangles</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">607</p>
+                    </div>
+                    <p>(42% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg7.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIRS0077R107_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-64628.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Rare Rose Ring</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">37,026</p>
+                    </div>
+                    <p>(24% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg9.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BISS0448R06_RAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-38481.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">The Silvio Crown Ring</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">47,055</p>
+                    </div>
+                    <p>(17% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg0.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BINS0832R04_YAA18SYEMXXXXXXXX_ABCD00-PICS-00001-1024-64468.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">The Solange Bypass Ring</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">13,723</p>
+                    </div>
+                    <p>(31% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.jewelove.in/cdn/shop/files/jewelove-70-pointer-emerald-cut-solitaire-diamond-accents-platinum-ring-jl-pt-1232-b-e-vvs-women-s-band-only-38755469885681.png?v=1682547666&width=2048" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Emerald Cut Diamond Ring</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">2,31,740</p>
+                    </div>
+                    <p>(09% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="rings_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="http://4.imimg.com/data4/IA/VJ/MY-23163465/gold-ring.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Ring</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">3,696</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neacklase_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg5.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BISP0503N19_YAA18DIG6XXXXXXXX_ABCD00-PICS-00003-1024-73077.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">The Almire Necklace</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,83,039</p>
+                    </div>
+                    <p>(16% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neacklase_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg7.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPN0787N34_RAA18DIG6SPICXXXX_ABCD00-PICS-00003-1024-60930.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">The Mystical Necklace</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,65,723</p>
+                    </div>
+                    <p>(05% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neacklase_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg4.bluestone.com/f_webp,c_scale,w_1024,b_rgb:ffffff/product/BISM0079P02_YAA18DIG6XXXXXXXX_ABCD00-fr-1024.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Exotic Feather Pendant</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">31,374</p>
+                    </div>
+                    <p>(20% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neacklase_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg9.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPO0772N29_YAA18DIG6PRWFXXXX_ABCD00-PICS-00003-1024-56331.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Anitra Choker Necklace</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,76,656</p>
+                    </div>
+                    <p>(09% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neacklase_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.giva.co/cdn/shop/products/PD096_1.jpg?v=1674237254&width=713" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Silver Deer Heart Necklace</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,799</p>
+                    </div>
+                    <p>(53% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://i.pinimg.com/736x/0e/c5/3d/0ec53d3bb87e0284a0315ed0f17043f0.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Simple Necklace</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">5,999</p>
+                    </div>
+                    <p>(30% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://5.imimg.com/data5/ANDROID/Default/2021/4/DE/MU/EC/8659970/product-jpeg-500x500.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Ladies Gold Chains</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">40,000</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://i.ebayimg.com/images/g/Gc8AAOSwg9NlRqfh/s-l1600.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">White Gold Chain</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">14,299</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317083643/WX/DV/OS/161796613/new-product-1000x1000.jpeg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-300"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600"> Multi Layered Chain </p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">899</p>
+                    </div>
+                    <p>(63% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="chains_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.crux.ng/cdn/shop/products/6a339f1c-3c72-43d9-9821-c74308b10b89.jpg?v=1642985511&width=840" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Twist Gold Chain</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">7,194</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://images.cltstatic.com/media/product/350/AT00169-SS0100-oxidised-owning-my-clumsy-nature-bracelet-prd-3-pd.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-cyan-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Enamelled Cuff Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">4,275</p>
+                    </div>
+                    <p>(5% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://kinclimg7.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIPO0829V03_YAA18DIG6XXXXXXXX_ABCD00-PICS-00000-1024-61239.png" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-300"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">The Ailyak Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">23,995</p>
+                    </div>
+                    <p>(34% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/bangle-bracelet-armlet/4/c/g/2-4-2-4-na-1-mkbrad376s-myki-original-imagzsh8z2egeeg8.jpeg?q=90&crop=false" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Stainless Steel Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">319</p>
+                    </div>
+                    <p>(19% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.bhindi.com/upload/product/SRJ-435923-BBAN-9.52g.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                     </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">83,510</p>
+                    </div>
+                    <p>(11% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="bracelets_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://www.tanishq.co.in/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwf1f167f2/images/hi-res/50D2P2BYRAA32_1.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                     </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Dolled Up! Diamond Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">35,057</p>
+                    </div>
+                    <p>(26% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="Jewels_kids" class="my-5">
+        <div class="w-[16vw] mx-auto flex justify-center items-center text-2xl font-bold text-yellow-400 border-b-4 border-purple-700 rounded-lg hover:border-t-2 hover:border-x-2 hover:border-purple-700"><p>Jewels For kids</p></div>
+        <div id="Jewels_carts" class="flex flex-wrap justify-evenly my-5">
+            <div id="earrings_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/71Lr50RyOBL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-purple-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Sparkly Butterfly Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">1,299</p>
+                    </div>
+                    <p>(50% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/618zHyZATiL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Malabar Gold & Diamonds</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw]  font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">7,374</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51FXU93XlPL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-purple-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-md mx-auto font-bold text-purple-600">Sterling Mush-Mush Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">759</p>
+                    </div>
+                    <p>(53% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-100 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61Dc7p6lxfL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-300"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Stud Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">14,927</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="earrings_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51MShDMp9XL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-300"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-amber-900"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Koala Bear Kid's Earrings</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">759</p>
+                    </div>
+                    <p>(53% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neakwear_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61A6LYQi79L._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-sm mx-auto font-bold text-purple-600">Malabar Gold & Diamonds Pendant</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">11,134</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neakwear_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61FBcg4Bp4L._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Swastik Pendant</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">11,811</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neakwear_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61-IOG3v1CL._SY695_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-200"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Snowmen Pandent</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">11,382</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neakwear_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61wmSygdTIL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Pandent of God Ganpati</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">67,920</p>
+                    </div>
+                    <p>(16% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="neakwear_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2 mb-3" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51MpPV3teCL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Flower Design Pandent</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">5,774</p>
+                    </div>
+                    <p>(13% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="Wristwear_1" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61ZzBQJpgwL._SY695_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Rose Gold Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">949</p>
+                    </div>
+                    <p>(53% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="Wristwear_2" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61AmrBz6RtL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-700"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-600"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-lg mx-auto font-bold text-purple-600">Gold & Diamonds Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">31,511</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="Wristwear_3" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/31UCBZ23naL._SY300_SX300_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-gray-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Butterfly Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">30,137</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="Wristwear_4" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/61pvgavvcXL._SY625_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-red-600"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-300"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-pink-300"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Gold Bird Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">30,561</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+            <div id="Wristwear_5" class="flex flex-col h-[50vh] w-[18vw] bg-gradient-to-t from-gray-300 to-gray-200 border-b-4 rounded-lg border-purple-600 hover:border-purple-600 hover:border-t-2 hover:border-x-2" >
+                <div class="bg-cover mx-auto">
+                    <a href="#"><img src="https://m.media-amazon.com/images/I/51UAMOfaMxL._SY695_.jpg" alt="" class=" h-[30vh] w-[13vw] border border-transparent rounded-lg my-1"></a>
+                    <div id="colours" class="flex  items-center">
+                        <p class="text-lg text-gray-700">Colours:</p>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-yellow-400"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-green-500"></button>
+                        </div>
+                        <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] hover:border hover:border-gray-700 justify-center items-center">
+                            <button class="h-[2vh] w-[1vw] rounded-[50%] bg-blue-700"></button>
+                        </div>
+                    </div>
+                </div>  
+                <p id="name" class="text-xl mx-auto font-bold text-purple-600">Bis Hallmarked Bracelet</p>
+                <div id="cost" class="mx-auto flex items-center justify-evenly w-[12vw] font-sans">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-xs mr-0.5"></i>
+                        <p class="font-bold text-2xl text-gray-700">25,471</p>
+                    </div>
+                    <p>(12% off)</p>
+                </div>
+                <button class="h-[4.5vh] w-[10vw] border-2 border-purple-600 rounded-lg text-gray-700 font-bold mx-auto mt-1">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="h-[15vh] w-full bg-gray-500 my-3">
+            <div class="mx-auto text-yellow-400 text-3xl w-[10vw] flex justify-center items-center">
+                <p>About Us</p>
+            </div>
+            <div class=" mx-auto flex w-[35vw] h-[5vh] text-yellow-400 items-center justify-evenly">
+                <p>Conditions of Use & Sale</p>
+                <p>Privecy Notice</p>
+                <p>Interest-Based Ads</p>
+            </div>
+            <div class="mx-auto flex w-[20vw] h-[5vh] text-yellow-400 items-center">
+                <div class="mx-0.5 flex h-[2.7vh] w-[1.3vw] rounded-[50%] border border-yellow-400 justify-center items-center">
+                    <button class="h-[2vh] w-[1vw] rounded-[50%] text-yellow-400 flex justify-center items-center">C</button>
+                </div>
+                <p>2001-2024, C & J.in, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
